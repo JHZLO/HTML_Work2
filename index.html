@@ -6,54 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pick man Game</title>
 
-	<script>
-
-		var englishDictionary = ['apple','banana','airplane','airport','animal','autumm','balloon','beautiful','bicycle','brother','butter','calendar','captical','ceiling','chopstick','curtain'];
-		
-		var englishDictionaryLength = englishDictionary.length;
-		
-		/** 게임스타트 버튼 눌렀을때의 함수 지정**/
-		function startButton(){
-			var i = Math.floor(Math.random()*englishDictionaryLength);
-			var answer = englishDictionary[i];
-			var answerLength = englishDictionary[i].length;
-			for( var j=0; j < answerLength; j++ ){
-				document.write("■ ");
-			}	
-		}
-
-		var alphabet = document.querySelector("#alphabet");
-
-		var k=0
-		/* 5번의 기회동안 알파벳을 맞출기회를 줌 맞추면 알파벳이 보임*/
-		while(k<5){
-			for(l=0;l<answerLength;l++){
-				if (alphabet in englishDictionary[i][l]){
-					document.write(englishDictionary[i][l]);
-				}
-				else{
-					document.write("■ ");
-				}
-			}
-		var k = k + 1;
-			
-		}
-		
-
-	</script>
+	
 </head>
 
 <body>
-	<h1> PICK MAN </h1>
-	<div>
-		<input type="button", value="GAME STAT", onclick="
-		startButton()
-		">
-	</div>
-		<br>
-	<div>
+  
+<h1> PICK MAN </h1>
+<div>
+	<input type="button", value="GAME STAT", onclick="
+	startButton()
+	">
+</div>
+<br>
+<div id="answer">		
+</div>
+<br>
+<div>
 	알파벳 맞추기 : <input type="text" id="alphabet" maxlength='1'>
-	</div>
+</div>
+ <br>
+<div>
+  답 맞추기 : <input type="text" id="userAnswer">    
+</div>
 
 </body>
 </html>
