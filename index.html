@@ -5,30 +5,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pick man Game</title>
-	<script src="gameHandler.js"></script>
-
+	<link rel="stylesheet" href="color.css">
 	
+
 </head>
 
+
+
 <body>
+
   
-<h1> PICK MAN </h1>
+<h1 id="title"> PICK MAN </h1>
+
+<div id="lifebox">
+	남은 생명 <div id="life"></div>
+</div>
+
 <div>
-	<input type="button", value="GAME STAT", onclick="
+	<input id="startbtn" type="button", value="GAME STAT", onclick="
 	startButton()
 	">
 </div>
+
 <br>
 <div id="answer">		
 </div>
 <br>
-<div>
+<div class="textloc">
 	알파벳 맞추기 : <input type="text" id="alphabet" maxlength='1'>
 </div>
- <br>
-<div>
+ <br><br>
+<div class="textloc">
   답 맞추기 : <input type="text" id="userAnswer">    
 </div>
 
+
+
+<script type="text/javascript" src="gameHandler.js"></script>
 </body>
 </html>
