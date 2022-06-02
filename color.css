@@ -1,0 +1,46 @@
+#title{
+			text-align: center;
+		}
+		#lifebox{
+			position: absolute;
+			width: 75px;
+			height: 75px;
+			border: 3px solid;
+			text-align: center;
+			top : 10px;
+			right: 10px;
+		}
+		#startbtn{
+			position: absolute;
+			right: 200px;
+			top: 30px;
+			width: 150px;
+			height: 30px;
+			text-align: center;
+		}
+		#life{
+			font-size : 45px;
+			color : red;
+		}
+		#alphabet{
+			position: absolute;
+			width : 20px;
+			font-size: 20px;
+			margin-left:10px ;
+		}
+		#userAnswer{
+			position: absolute;
+			width : 100px;
+			font-size: 20px;
+			margin-left:10px ;
+		}
+		#answer{
+			position: absolute;
+			
+			font-size: 50px;
+
+		}
+		.textloc{
+			position: absolute;
+			right: 150px;
+		}
